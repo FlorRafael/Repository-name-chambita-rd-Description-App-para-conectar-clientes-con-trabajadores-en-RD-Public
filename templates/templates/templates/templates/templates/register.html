@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Registro{% endblock %}
+{% block content %}
+<div class="container mt-5" style="max-width: 400px;">
+    <h2 class="text-center mb-4">Crear Cuenta</h2>
+    <form method="POST">
+        <div class="mb-3"><input type="text" name="nombre" placeholder="Nombre" class="form-control" required></div>
+        <div class="mb-3"><input type="email" name="email" placeholder="Correo" class="form-control" required></div>
+        <div class="mb-3"><input type="password" name="password" placeholder="Contraseña" class="form-control" required></div>
+        <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+    </form>
+</div>
+{% endblock %}
